@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script type="module" src="script.js" defer></script>
+        <title>Where's Waldo App</title>
+    </head>
+    <body class="modal-open">
+        <div class="modal-container modal-open start-modal-container">
+            <div class="modal-body">
+                <div class="start-modal">
+                    <h2>Start the Game</h2>
+                    <button class="start-btn">Start</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-container end-modal-container">
+            <div class="modal-body">
+                <div class="end-modal">
+                    <h2>Game has ended</h2>
+                    <p class="game-endtime"></p>
+                    <button class="reset-btn">Restart Game</button>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="scoreboard">
+                <div class="board-item">
+                    <img class="b-item-image" src="image/mario.jpeg" alt="" />
+                    <p class="b-item-name">Mario</p>
+                    <div class="success-state"></div>
+                </div>
+                <div class="board-item">
+                    <img class="b-item-image" src="image/megaman.jpeg" alt="" />
+                    <p class="b-item-name">Mega Man</p>
+                    <div class="success-state"></div>
+                </div>
+                <div class="board-item">
+                    <img
+                        class="b-item-image"
+                        src="image/donkeykong.jpeg"
+                        alt=""
+                    />
+                    <p class="b-item-name">Donkey Kong</p>
+                    <div class="success-state"></div>
+                </div>
+            </div>
+            <div class="timer">
+               <h2>Timer: <span class="game-timer">0:00</span></h2>
+            </div>
+        </header>
+        <div class="canvas-container">
+            <div class="context-menu">
+                <div class="menu-item">Mario</div>
+                <div class="menu-item">Mega Man</div>
+                <div class="menu-item">Donkey Kong</div>
+            </div>
+            <img class="canvas" draggable="false" src="image/canvas.jpg" alt="Canvas" />
+        </div>
+    </body>
+</html>
